@@ -28,6 +28,7 @@
 * [Roadmap](#roadmap)
 * [Contributing](#contributing)
 * [Authors](#authors)
+![image](https://github.com/Charlotte-Greenaway/solarsystem/assets/134973389/eb1c5902-3398-4f43-a47d-010a8c197890)
 
 ## Built With
 
