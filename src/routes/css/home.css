@@ -50,3 +50,12 @@ body{
     border-radius: 20px;
     border: none;
 }
+
+#tilttext{
+    color: white;
+    transform: perspective(600px) rotateX(35deg) scaleY(1.5);
+    font-family: "Star Jedi", sans-serif;
+    text-align: center;
+    margin: auto;
+    font-size: 1.5em;
+}
