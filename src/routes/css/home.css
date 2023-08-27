@@ -1,0 +1,52 @@
+body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+#home {
+    text-align: center;
+    margin: auto;
+}
+
+#hometitle {
+    color: white;
+    transform: perspective(600px) rotateX(35deg) scaleY(1.5);
+    font-family: "Star Jedi", sans-serif;
+    font-size: 3em;
+}
+
+#arrow {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 40px solid white;
+    margin: 12% auto;
+    transform: perspective(600px) rotateX(50deg) scale(2);
+    opacity: 0.88;
+    transition: transform 0.5s ease;
+}
+
+#arrow:hover {
+    transform: perspective(600px) rotateX(50deg) scale(2) translateY(-30%);
+    transition: transform 0.5s ease;
+}
+#root{
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    height: 100dvh;
+}
+
+#username{
+    color: grey;
+    transform: perspective(600px) rotateX(35deg) scaleY(1.5);
+    font-family: "Star Jedi", sans-serif;
+    font-size: 1.5em;
+    padding:5px;
+    border-radius: 20px;
+    border: none;
+}
