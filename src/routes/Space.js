@@ -47,6 +47,9 @@ const Space = ({ username }) => {
             let updatedVisibility;
             switch (this.data) {
               case "sun":
+                if(!visibility.Sun){
+                  break;
+                }
                 setZoomed(true)
                 updatedVisibility= Object.fromEntries(
                   Object.entries(visibility).map(([planet, _]) => [planet, planet === "Sun"])
@@ -57,6 +60,9 @@ const Space = ({ username }) => {
                 z = -2;
                 break;
               case "mercury":
+                if(!visibility.Mercury){
+                  break;
+                }
                 setZoomed(true)
                 updatedVisibility= Object.fromEntries(
                   Object.entries(visibility).map(([planet, _]) => [planet, planet === "Mercury"])
@@ -67,6 +73,9 @@ const Space = ({ username }) => {
                 z = -8;
                 break;
               case "venus":
+                if(!visibility.Venus){
+                  break;
+                }
                 setZoomed(true)
                 updatedVisibility= Object.fromEntries(
                   Object.entries(visibility).map(([planet, _]) => [planet, planet === "Venus"])
@@ -77,6 +86,9 @@ const Space = ({ username }) => {
                 z = -8.25;
                 break;
               case "earth":
+                if(!visibility.Earth){
+                  break;
+                }
                 setZoomed(true)
                 updatedVisibility= Object.fromEntries(
                   Object.entries(visibility).map(([planet, _]) => [planet, planet === "Earth"])
@@ -87,6 +99,9 @@ const Space = ({ username }) => {
                 z = -8;
                 break;
               case "mars":
+                if(!visibility.Mars){
+                  break;
+                }
                 setZoomed(true)
                 updatedVisibility= Object.fromEntries(
                   Object.entries(visibility).map(([planet, _]) => [planet, planet === "Mars"])
@@ -97,6 +112,9 @@ const Space = ({ username }) => {
                 z = -8.25;
                 break;
               case "jupiter":
+                if(!visibility.Jupiter){
+                  break;
+                }
                 setZoomed(true)
                 updatedVisibility= Object.fromEntries(
                   Object.entries(visibility).map(([planet, _]) => [planet, planet === "Jupiter"])
@@ -107,6 +125,9 @@ const Space = ({ username }) => {
                 z = -8;
                 break;
               case "saturn":
+                if(!visibility.Saturn){
+                  break;
+                }
                 setZoomed(true)
                 updatedVisibility= Object.fromEntries(
                   Object.entries(visibility).map(([planet, _]) => [planet, planet === "Saturn"])
@@ -117,6 +138,9 @@ const Space = ({ username }) => {
                 z = -7.5;
                 break;
               case "uranus":
+                if(!visibility.Uranus){
+                  break;
+                }
                 setZoomed(true)
                 updatedVisibility= Object.fromEntries(
                   Object.entries(visibility).map(([planet, _]) => [planet, planet === "Uranus"])
@@ -127,6 +151,9 @@ const Space = ({ username }) => {
                 z = -7.5;
                 break;
               case "neptune":
+                if(!visibility.Neptune){
+                  break;
+                }
                 setZoomed(true)
                 updatedVisibility= Object.fromEntries(
                   Object.entries(visibility).map(([planet, _]) => [planet, planet === "Neptune"])
@@ -257,7 +284,7 @@ const Space = ({ username }) => {
             position={{ x: -2, y: 2.5, z: -3 }}
             value={`Hey ${username}, click on a planet to explore!`}
           />
-          <Entity primitive="a-sky" src="#spacebg" />
+          <Entity primitive="a-sky" src="#spacebg" marker/>
           {/* <!-- Sun --> */}
           <Entity
             primitive="a-sphere"
