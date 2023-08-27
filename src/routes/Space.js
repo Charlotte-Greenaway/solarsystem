@@ -77,12 +77,12 @@ const Space = ({username}) => {
     return () => {
       clearInterval(intervalId); 
     };
-  }, [rotation.Sun, rotation.Mercury, rotation.Venus, rotation.Earth, rotation.Mars, rotation.Jupiter, rotation.Saturn, rotation.Uranus, rotation.Neptune]);
+  }, [rotation.Sun, rotation.Mercury, rotation.Venus, rotation.Earth, rotation.Mars, rotation.Jupiter, rotation.Saturn, rotation.Uranus, rotation.Neptune,rotationStates.Sun, rotationStates.Mercury, rotationStates.Venus, rotationStates.Earth, rotationStates.Mars, rotationStates.Jupiter, rotationStates.Saturn, rotationStates.Uranus, rotationStates.Neptune]);
 
  
   return (
     <>
-    {/* {correctOrientation ? ( */}
+    {correctOrientation ? (
         <Scene background="color: midnightblue" cursor="rayOrigin:mouse">
           <a-assets>
             <img alt="suntexture" id="sun" src={sun} />
@@ -175,9 +175,9 @@ const Space = ({username}) => {
           </Entity>
         </Scene>
       
-    {/* ) : (
+     ) : (
       <p>Please tilt phone landscape.</p>
-    )} */}
+    )} 
     </>
   );
 };
