@@ -45,7 +45,7 @@ Contributions are what make the open source community such an amazing place to b
 
 ## Authors
 
-* **Charlotte Greenaway** - *Comp Sci Student* - [Shaan Khan](https://github.com/Charlotte-Greenaway/) 
+* **Charlotte Greenaway** - *Comp Sci Student* (https://github.com/Charlotte-Greenaway/) 
 
 ![image](https://github.com/Charlotte-Greenaway/solarsystem/assets/134973389/eb1c5902-3398-4f43-a47d-010a8c197890)
 
