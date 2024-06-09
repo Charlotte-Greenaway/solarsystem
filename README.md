@@ -12,7 +12,7 @@
     <a href="https://github.com/Charlotte-Greenaway/solarsystem"><strong>Explore the docs »</strong></a>
     <br/>
     <br/>
-    <a href="https://solartraveller.netlify.app/">View Demo</a>
+    <a href="https://solartraveller.charlotte-greenaway.com">View Demo</a>
     .
     <a href="https://github.com/Charlotte-Greenaway/solarsystem/issues">Report Bug</a>
     .
